@@ -11,7 +11,7 @@ class Node
 		next=null;
 	}
 }
-public class LinkedList 
+public class Linkedlist 
 {
 	public Node head=null;
 	
@@ -96,7 +96,7 @@ public class LinkedList
 	
 	public static void main(String[] args)
 	{
-		LinkedList list = new LinkedList();
+		Linkedlist list = new Linkedlist();
 		list.head = new Node(5);
 		list.addAtEnd(10);
 		list.addAtBeg(1);

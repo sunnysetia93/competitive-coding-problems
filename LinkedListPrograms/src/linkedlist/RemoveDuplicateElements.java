@@ -11,7 +11,7 @@ import java.util.*;
 
 public class RemoveDuplicateElements {
 	
-	public RemoveDuplicateElements(LinkedList l)
+	public RemoveDuplicateElements(Linkedlist l)
 	{
 		HashSet<Integer> map = new HashSet<Integer>();
 		
@@ -36,7 +36,7 @@ public class RemoveDuplicateElements {
 
 	public static void main(String[] args) {
 		
-		LinkedList list = new LinkedList();
+		Linkedlist list = new Linkedlist();
 		list.addAtEnd(5);
 		list.addAtEnd(5);
 		list.addAtEnd(9);
