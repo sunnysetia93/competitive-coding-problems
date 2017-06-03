@@ -1,0 +1,8 @@
+/bin/
+
+/.metadata/
+/.recommenders/
+/LinkedListPrograms/.classpath
+/LinkedListPrograms/.project
+/LinkedListPrograms/.settings/
+*.class
