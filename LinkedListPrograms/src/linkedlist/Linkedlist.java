@@ -94,6 +94,25 @@ public class Linkedlist
 		head=head.next;
 	}
 	
+	public int size()
+	{
+		int count = 0 ;
+		
+		if(head==null)
+			return count;
+		
+		Node thead = head;
+		while(thead!=null)
+		{
+			count++;
+			thead=thead.next;
+			
+		}
+		
+		return count;
+		
+	}
+	
 	public static void main(String[] args)
 	{
 		Linkedlist list = new Linkedlist();
@@ -106,6 +125,7 @@ public class Linkedlist
 		list.delFromPosition(2);
 		list.delFromPosition(1);
 		list.display();
+		System.out.println(list.size());
 		
 	}
 	
