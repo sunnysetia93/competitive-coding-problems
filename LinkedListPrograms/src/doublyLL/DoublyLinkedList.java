@@ -2,8 +2,8 @@ package doublyLL;
 
 public class DoublyLinkedList {
 
-	Node head=null;
-	Node tail=null;
+	public Node head=null;
+	public Node tail=null;
 	
 	public void addAtHead(int k,String val)
 	{

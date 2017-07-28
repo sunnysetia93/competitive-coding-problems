@@ -14,4 +14,14 @@ public class Node
 		next=null;
 		prev=null;
 	}
+	
+	public int getKey()
+	{
+		return key;
+	}
+	
+	public String getValue()
+	{
+		return value;
+	}
 }
