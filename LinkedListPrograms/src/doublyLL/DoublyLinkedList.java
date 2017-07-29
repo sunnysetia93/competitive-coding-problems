@@ -2,26 +2,45 @@ package doublyLL;
 
 public class DoublyLinkedList {
 
-	public Node head=null;
-	public Node tail=null;
+	public LNode head=null;
+	public LNode tail=null;
 	
 	public void addAtHead(int k,String val)
 	{
-		Node n = new Node(k,val);
+		LNode n = new LNode(k,val);
 		if(head==null && tail==null)
 		{
+			n.next=head;
 			head=n;
 			tail=n;
 		}
 		else
 		{
 			n.next=head;
+			n.prev=null;
+			head.prev=n;
+			head=n;
+		}
+	}
+	public void addNodeAtHead(LNode n)
+	{
+		if(head==null && tail==null)
+		{
+			n.next=head;
+			head=n;
+			tail=n;
+		}
+		else
+		{
+			n.next=head;
+			n.prev=null;
+			head.prev=n;
 			head=n;
 		}
 	}
 	public void addAtTail(int k,String val)
 	{
-		Node n = new Node(k,val);
+		LNode n = new LNode(k,val);
 		if(head==null && tail==null)
 		{
 			head=n;
@@ -35,7 +54,7 @@ public class DoublyLinkedList {
 		}
 	}
 	
-	public void remove(Node curr)
+	public void remove(LNode curr)
 	{
 		if(curr==head)
 		{
@@ -51,14 +70,13 @@ public class DoublyLinkedList {
 		{
 			curr.prev.next=curr.next;
 			curr.next.prev=curr.prev;
-			curr.next=null;
-			curr.prev=null;
+
 		}
 	}
 	
-	public Node search(int k,String string)
+	public LNode search(int k,String string)
 	{
-		Node thead = head;
+		LNode thead = head;
 		
 		if(thead.key==k && thead.value.equals(string))
 		{
@@ -85,7 +103,7 @@ public class DoublyLinkedList {
 	
 	public void display()
 	{
-		Node thead=head;
+		LNode thead=head;
 		
 		if(thead==null)
 		{
@@ -106,7 +124,7 @@ public class DoublyLinkedList {
 		dll.addAtHead(2, "page2");
 		dll.addAtTail(3, "page3");
 		dll.display();
-		Node x = dll.search(2, "page2");
+		LNode x = dll.search(2, "page2");
 		System.out.println("searched node->" + x.key);
 		dll.remove(x);
 		dll.display();

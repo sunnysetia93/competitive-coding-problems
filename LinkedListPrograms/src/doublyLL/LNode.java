@@ -1,13 +1,13 @@
 package doublyLL;
 
-public class Node 
+public class LNode 
 {
 	int key;
 	String value;
-	Node next;
-	Node prev;
+	public LNode next;
+	public LNode prev;
 	
-	public Node(int k,String p)
+	public LNode(int k,String p)
 	{
 		key=k;
 		value=p;
