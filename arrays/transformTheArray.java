@@ -42,7 +42,7 @@ class GFG {
 		    }
 		    
 		    int p=0;
-		    for(int i=0;i<n;i++)	//either print directly or create additional array or swap zeroes.
+		    for(int i=0;i<n;i++)	//either print directly or create additional array or swap zeros.
 		    {
 		        if(arr[i]!=0)
 		            System.out.print(arr[i] + " ");
