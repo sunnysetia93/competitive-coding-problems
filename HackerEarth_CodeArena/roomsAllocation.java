@@ -23,25 +23,33 @@ class Codechef
 		    int rejectedCount=0;
     	    for(int i=0;i<s.length();i++){
     	        char c = s.charAt(i);
-	            MapRooms.put(c,0);
+	            MapRooms.put(c,-1);
     	    }
     	    for(int i=0;i<s.length();i++){
 	           // System.out.println(""+MapRooms);
+	            
 	            char c = s.charAt(i);
 	            int roomStatus = MapRooms.get(c);
 	            if(roomStatus==1){
 	               availableRooms++;
-	               MapRooms.put(c,-1);
+	               MapRooms.remove(c);
 	            }
-	            else if(availableRooms!=0 && roomStatus==0){
+	            else if(availableRooms!=0 && (roomStatus==-1)){
 	                availableRooms--;
 	                MapRooms.put(c,1);
 	            }
-	            else if(availableRooms<=0 && roomStatus==0){
-	                    rejectedCount++;
-	                    MapRooms.put(c,-1);
+	            else if(availableRooms<=0 && roomStatus==-1){
+	                    MapRooms.put(c,0);
 	            }
-    	    
+	            else if(availableRooms<=0 && roomStatus==0){
+	               // availableRooms--;
+                    rejectedCount++;
+	                MapRooms.remove(c);
+	            }
+    	        else if(availableRooms!=0 && roomStatus==0){
+    	            availableRooms--;
+    	            MapRooms.put(c,1);
+    	        }
 		    }
     	    System.out.println(rejectedCount);
 		    rooms=sc.nextInt();
