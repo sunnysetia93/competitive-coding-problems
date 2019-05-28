@@ -1,3 +1,5 @@
+// problem link : https://www.hackerrank.com/challenges/pairs/problem
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
