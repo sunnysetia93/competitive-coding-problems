@@ -14,7 +14,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class CoinChange {
 
     // Complete the getWays function below.
     static long getWays(int n, long[] c) {

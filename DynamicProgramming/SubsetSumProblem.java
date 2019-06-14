@@ -10,7 +10,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Solution
+class SubsetSumProblem
 {
     private static final Scanner sc = new Scanner(System.in);
 

@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class LongestCommonSubsequence {
 
     // Complete the longestCommonSubsequence function below.
     static int[] longestCommonSubsequence(int[] a, int[] b) {
