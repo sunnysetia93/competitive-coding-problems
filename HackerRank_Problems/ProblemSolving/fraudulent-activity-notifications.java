@@ -24,7 +24,6 @@ class Solution {
             if(i==d){
                 median = findTwiceOfMedian(freq,d);
                 if(expenditure[i]>=median){
-                    // System.out.println(sorted + " " + d + " " + median);
                     resultCount++;
                 }
             }
@@ -35,7 +34,6 @@ class Solution {
                 freq[removeEle]--;
                 median = findTwiceOfMedian(freq,d);
                 if(expenditure[i]>=median){
-                    // System.out.println(sorted + " " + d + " " + median);
                     resultCount++;
                 }
             }
