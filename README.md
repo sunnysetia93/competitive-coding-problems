@@ -13,6 +13,6 @@
 <li><a href="http://www.hackerearth.com/">Hacker Earth</a></li>
 <li><a href="http://www.leetcode.com/">Leet Code</a></li>
 <li><a href="http://www.codechef.com/">Code Chef</a></li>
-<li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_Questions">Problems solved using JavaScript</a><li> 
+<li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_Questions">Problems solved using JavaScript</a></li> 
 <li>:point_right: <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Eloquent_Javascript_Exercises">Eloquent Javascript Book Exercises</a></li>
 </ul>
