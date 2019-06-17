@@ -38,9 +38,7 @@ class Solution {
                 }
             }
         }
-
         return resultCount;
-
     }
 
     private static int findTwiceOfMedian(int[] freq,int d){
