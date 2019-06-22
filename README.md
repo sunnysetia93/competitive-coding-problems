@@ -16,3 +16,6 @@
 <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_Questions">Problems solved using JavaScript</a></li> 
 <li>:point_right: <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Eloquent_Javascript_Exercises">Eloquent Javascript Book Exercises</a></li>
 </ul>
+
+### :star: This repository is open to contributions. 
+#### To contribute, raise a pull request and help improve the existing solutions.
