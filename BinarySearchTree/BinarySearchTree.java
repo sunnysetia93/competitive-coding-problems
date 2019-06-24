@@ -1,21 +1,26 @@
+package BinarySearchTree;
+
 import java.util.*;
 import java.lang.*;
 
+class Node<T extends Comparable<T>>{
+    T data;
+    Node<T> left,right;
+
+    public Node(T val,Node<T> left,Node<T> right){
+        this.data=val;
+        this.left=left;
+        this.right=right;
+    }
+}
+
 public class BinarySearchTree<T extends Comparable<T>> {
     private int nodeCount =0;
-    private Node root = null;
+    private Node<T> root = null;
 
-    private class Node{
-        T data;
-        Node left,right;
-
-        public Node(T val,Node left,Node right){
-            this.data=val;
-            this.left=left;
-            this.right=right;
-        }
+    public Node<T> getRootNode(){
+        return root;
     }
-
     public boolean isEmpty(){
         return size()==0;
     }
@@ -36,11 +41,11 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
-    private Node add(Node node,T elem){
+    private Node<T> add(Node<T> node,T elem){
 
         // found leaf - null
         if(node==null){
-            node = new Node(elem,null,null);
+            node = new Node<T>(elem,null,null);
         }
         else{
             // iterate under a subtree - left or right
@@ -56,6 +61,25 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return node;
     }
 
+    public Node<T> search(T elem){
+        Node<T> node = root;
+        
+        if(isEmpty())
+            return null;
+        
+        while(node!=null){
+            int cmp = elem.compareTo(node.data);
+            if(cmp>0)
+                node=node.right;
+            else if(cmp<0)
+                node=node.left;
+            else
+                return node;
+        }
+
+        return null;
+    }
+
     public boolean remove(T elem){
         if(!contains(root,elem))
             return false;
@@ -65,7 +89,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
             return true;
         }
     }
-    private Node remove(Node node,T elem){
+    private Node<T> remove(Node<T> node,T elem){
         if(node == null)
             return null;
         
@@ -81,7 +105,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
             // only right subtree present
             if(node.left==null){
-                Node rightChild = node.right;
+                Node<T> rightChild = node.right;
                 node.data=null;
                 node=null;
 
@@ -90,7 +114,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
             // only left subtree present
             else if(node.right==null){
 
-                Node leftChild = node.left;
+                Node<T> leftChild = node.left;
 
                 node.data=null;
                 node=null;
@@ -99,7 +123,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
             }
             else{
                 // finding smallest element from right substree
-                Node smallest = findMin(node.right);
+                Node<T> smallest = findMin(node.right);
                 System.out.println(smallest.data);
                 node.data=smallest.data;
 
@@ -110,7 +134,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return node;
     }
 
-    private Node findMin(Node node){
+    private Node<T> findMin(Node<T> node){
         while(node.left!=null){
             node=node.left;
         }
@@ -119,15 +143,15 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     public void breadthFirstSearch(){
-        Node node = root;
-        LinkedList<Node> queue = new LinkedList<Node>();
+        Node<T> node = root;
+        LinkedList<Node<T>> queue = new LinkedList<Node<T>>();
 
         if(root==null)
             return;
         
         queue.add(node);
         while(!queue.isEmpty()){
-            Node temp = queue.removeFirst();
+            Node<T> temp = queue.removeFirst();
             System.out.print(temp.data+" ");
             if(temp.left!=null)
                 queue.add(temp.left);
@@ -144,7 +168,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     }
 
-    private void depthFirstSearch(Node node){ 
+    private void depthFirstSearch(Node<T> node){ 
         if(node!=null){
             System.out.print(node.data + " ");
             depthFirstSearch(node.left);
@@ -153,14 +177,14 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     public void depthFirstSearch_NonRecursive(){
-        HashSet<Node> hashSet = new HashSet<Node>();
-        LinkedList<Node> stack = new LinkedList<Node>();
+        HashSet<Node<T>> hashSet = new HashSet<Node<T>>();
+        LinkedList<Node<T>> stack = new LinkedList<Node<T>>();
 
         if(root==null)
             return;
         stack.push(root);
         while(!stack.isEmpty()){
-            Node popped = stack.pop();
+            Node<T> popped = stack.pop();
             if(!hashSet.contains(popped)){
                     
                 if(popped.right!=null)
@@ -175,7 +199,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         System.out.println();
     }
 
-    private boolean contains (Node node, T elem){
+    private boolean contains (Node<T> node, T elem){
         if(node == null)
             return false;
         
@@ -195,7 +219,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         System.out.println();
     }
 
-    private void inOrderTraversal(Node node){
+    private void inOrderTraversal(Node<T> node){
         
         if(node == null)
             return;
@@ -210,7 +234,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         System.out.println();
     }
 
-    private void preOrderTraversal(Node node){
+    private void preOrderTraversal(Node<T> node){
         if(node==null)
             return;
 
@@ -224,7 +248,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         System.out.println();
     }
 
-    public void postOrderTraversal(Node node){
+    public void postOrderTraversal(Node<T> node){
         if(node==null)
             return;
 
@@ -235,7 +259,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     public static void main(String[] args){
         BinarySearchTree<Integer> bst = new BinarySearchTree<Integer>();
-        System.out.println(bst.isEmpty());
+        // System.out.println(bst.isEmpty());
         bst.add(10);
         bst.add(15);
         bst.add(13);
@@ -256,6 +280,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
         bst.depthFirstSearch();
         System.out.println("DFS - Non recursive: ");
         bst.depthFirstSearch_NonRecursive();
+
+        Node<Integer> searchedNode = bst.search(6);
+        if(searchedNode!=null)
+            System.out.println(searchedNode.data);
 
     }
 }
