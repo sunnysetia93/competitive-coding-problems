@@ -118,6 +118,63 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return node;
     }
 
+    public void breadthFirstSearch(){
+        Node node = root;
+        LinkedList<Node> queue = new LinkedList<Node>();
+
+        if(root==null)
+            return;
+        
+        queue.add(node);
+        while(!queue.isEmpty()){
+            Node temp = queue.removeFirst();
+            System.out.print(temp.data+" ");
+            if(temp.left!=null)
+                queue.add(temp.left);
+            if(temp.right!=null)
+                queue.add(temp.right);
+        }
+        System.out.println();
+        return;
+    }
+
+    public void depthFirstSearch(){
+        depthFirstSearch(root);
+        System.out.println();
+
+    }
+
+    private void depthFirstSearch(Node node){ 
+        if(node!=null){
+            System.out.print(node.data + " ");
+            depthFirstSearch(node.left);
+            depthFirstSearch(node.right);
+        }
+    }
+
+    public void depthFirstSearch_NonRecursive(){
+        HashSet<Node> hashSet = new HashSet<Node>();
+        LinkedList<Node> stack = new LinkedList<Node>();
+
+        if(root==null)
+            return;
+        stack.push(root);
+        while(!stack.isEmpty()){
+            Node popped = stack.pop();
+            if(!hashSet.contains(popped)){
+                    
+                if(popped.right!=null)
+                    stack.push(popped.right);
+                if(popped.left!=null)
+                    stack.push(popped.left);
+                System.out.print(popped.data + " ");
+                hashSet.add(popped);
+            }
+        }
+
+        System.out.println();
+    }
+
     private boolean contains (Node node, T elem){
         if(node == null)
             return false;
@@ -148,6 +205,34 @@ public class BinarySearchTree<T extends Comparable<T>> {
         inOrderTraversal(node.right);
     }
 
+    public void preOrderTraversal(){
+        preOrderTraversal(root);
+        System.out.println();
+    }
+
+    private void preOrderTraversal(Node node){
+        if(node==null)
+            return;
+
+        System.out.print(node.data + " ");
+        preOrderTraversal(node.left);
+        preOrderTraversal(node.right);
+    }
+
+    public void postOrderTraversal(){
+        postOrderTraversal(root);
+        System.out.println();
+    }
+
+    public void postOrderTraversal(Node node){
+        if(node==null)
+            return;
+
+        postOrderTraversal(node.left);
+        postOrderTraversal(node.right);
+        System.out.print(node.data + " ");
+    }
+
     public static void main(String[] args){
         BinarySearchTree<Integer> bst = new BinarySearchTree<Integer>();
         System.out.println(bst.isEmpty());
@@ -156,10 +241,21 @@ public class BinarySearchTree<T extends Comparable<T>> {
         bst.add(13);
         bst.add(17);
         bst.add(20);
-        bst.add(18);
+        bst.add(12);
+        System.out.println("In-Order Traversal: ");
         bst.inOrderTraversal();
-        bst.remove(17);
-        bst.inOrderTraversal();
+        System.out.println("Pre-Order Traversal: ");
+        bst.preOrderTraversal();
+        System.out.println("Post-Order Traversal: ");
+        bst.postOrderTraversal();
+        // bst.remove(17);
+        // bst.inOrderTraversal();
+        System.out.println("BFS: ");
+        bst.breadthFirstSearch();
+        System.out.println("DFS: ");
+        bst.depthFirstSearch();
+        System.out.println("DFS - Non recursive: ");
+        bst.depthFirstSearch_NonRecursive();
 
     }
 }
