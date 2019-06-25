@@ -263,6 +263,43 @@ public class BinarySearchTree<T extends Comparable<T>> {
         System.out.print(node.data + " ");
     }
 
+    public void spiralOrderTraversal(){
+        spiralOrderTraversal(root);
+        System.out.println();
+    }
+
+    private void spiralOrderTraversal(Node<T> node){
+        if(node==null)
+            return;
+
+        Stack<Node<T>> s1 = new Stack<Node<T>>();
+        Stack<Node<T>> s2 = new Stack<Node<T>>();
+
+        s1.push(node);
+        while(!s1.isEmpty() || !s2.isEmpty()){
+            Node<T> current = null;
+            while(!s1.isEmpty()){
+                 current = s1.pop();
+                if(current.left!=null)
+                    s2.push(current.left);
+                if(current.right!=null)
+                    s2.push(current.right);
+
+                System.out.print(current.data + " ");
+            }
+            
+            while(!s2.isEmpty()){
+                current = s2.pop();
+                if(current.right!=null)
+                    s1.push(current.right);
+                if(current.left!=null)
+                    s1.push(current.left);
+                
+                System.out.print(current.data + " ");
+            }
+        }
+    }
+
     public static void main(String[] args){
         BinarySearchTree<Integer> bst = new BinarySearchTree<Integer>();
         // System.out.println(bst.isEmpty());
@@ -290,6 +327,9 @@ public class BinarySearchTree<T extends Comparable<T>> {
         Node<Integer> searchedNode = bst.search(6);
         if(searchedNode!=null)
             System.out.println(searchedNode.data);
+
+        System.out.println("Spiral order traversal : ");
+        bst.spiralOrderTraversal();
 
     }
 }
