@@ -7,6 +7,12 @@ class Node<T extends Comparable<T>>{
     T data;
     Node<T> left,right;
 
+    public Node(T val){
+        this.data=val;
+        this.left=null;
+        this.right=null;
+    }
+
     public Node(T val,Node<T> left,Node<T> right){
         this.data=val;
         this.left=left;
@@ -219,7 +225,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         System.out.println();
     }
 
-    private void inOrderTraversal(Node<T> node){
+    public void inOrderTraversal(Node<T> node){
         
         if(node == null)
             return;
