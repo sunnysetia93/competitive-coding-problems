@@ -268,6 +268,54 @@ public class BinarySearchTree<T extends Comparable<T>> {
         System.out.println();
     }
 
+    public void spiralOrderTraversalDeque(){
+        spiralOrderTraversalDeque(root);
+        System.out.println();
+    }
+
+    private void spiralOrderTraversalDeque(Node<T> node){
+        if(node == null)
+            return;
+        Deque<Node<T>> deque = new LinkedList<Node<T>>();
+
+        deque.addFirst(node);
+        int count = 1;
+        boolean flip = true;
+        while(!deque.isEmpty()){
+            int currentCount = 0;
+            while(count>0){
+                if(flip){
+                    node = deque.pollFirst();
+                    if(node.left!=null){
+                        deque.addLast(node.left);
+                        currentCount++;
+                    }
+                    if(node.right!=null){
+                        deque.addLast(node.right);
+                        currentCount++;
+                    }
+                    System.out.print(node.data + " ");
+                }
+                else{
+                    node = deque.pollLast();
+                    if(node.right!=null){
+                        deque.addFirst(node.right);
+                        currentCount++;
+                    }
+                    if(node.left!=null){
+                        deque.addFirst(node.left);
+                        currentCount++;
+                    }
+                    System.out.print(node.data + " ");
+                }
+                
+                count--;
+            }
+            flip=!flip;
+            count=currentCount;
+        }
+    }
+
     private void spiralOrderTraversal(Node<T> node){
         if(node==null)
             return;
@@ -328,8 +376,11 @@ public class BinarySearchTree<T extends Comparable<T>> {
         if(searchedNode!=null)
             System.out.println(searchedNode.data);
 
-        System.out.println("Spiral order traversal : ");
+        System.out.println("Spiral order traversal using 2 stacks : ");
         bst.spiralOrderTraversal();
+
+        System.out.println("Spiral order traversal using 1 deque : ");
+        bst.spiralOrderTraversalDeque();
 
     }
 }
