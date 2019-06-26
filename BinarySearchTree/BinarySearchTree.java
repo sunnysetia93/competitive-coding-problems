@@ -235,6 +235,28 @@ public class BinarySearchTree<T extends Comparable<T>> {
         inOrderTraversal(node.right);
     }
 
+    public void inOrderTraversalNonRecursive(){
+        if(root==null)
+            return;
+        LinkedList<Node<T>> stack = new LinkedList<Node<T>>();
+
+        Node<T> curr = root;
+        while(true){
+            if(curr!=null){
+                stack.push(curr);
+                curr=curr.left;
+            }
+            else{
+                if(stack.isEmpty())
+                    break;
+                curr=stack.pop();
+                System.out.print(curr.data + " ");
+                curr=curr.right;
+            }
+        }
+        System.out.println();
+    }
+
     public void preOrderTraversal(){
         preOrderTraversal(root);
         System.out.println();
@@ -261,6 +283,49 @@ public class BinarySearchTree<T extends Comparable<T>> {
         postOrderTraversal(node.left);
         postOrderTraversal(node.right);
         System.out.print(node.data + " ");
+    }
+
+    public void postOrderTraversalNonRecursive(){
+        if(root==null)
+            return ;
+        LinkedList<Node<T>> stack = new LinkedList<Node<T>>();
+        Set<Node<T>> set = new HashSet<Node<T>>();
+
+        Node<T> node = root;
+        stack.push(node);
+        
+        Node<T> curr = stack.peek();
+        while(!stack.isEmpty()){
+            
+            while(curr.left!=null && !set.contains(curr.left)){
+                curr=curr.left;
+                stack.push(curr);
+            }
+
+            if(curr.right==null){
+                set.add(curr);
+                System.out.print(curr.data + " ");
+                stack.pop();
+                if(stack.size()==0)
+                    break;
+                curr=stack.peek();
+            }
+            else if(curr.right!=null && set.contains(curr.right)){
+                set.add(curr);
+                System.out.print(curr.data + " ");
+                stack.pop();
+                curr=stack.peek();
+                if(stack.size()==0)
+                    break;
+            }
+            else{
+                curr=curr.right;
+                stack.push(curr);
+            }
+        }
+
+        System.out.println();
+
     }
 
     public void spiralOrderTraversal(){
@@ -381,6 +446,12 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
         System.out.println("Spiral order traversal using 1 deque : ");
         bst.spiralOrderTraversalDeque();
+
+        System.out.println("Post-Order Traversal - Non-Recursive: ");
+        bst.postOrderTraversalNonRecursive();
+
+        System.out.println("In-Order Traversal - Non-Recursive: ");
+        bst.inOrderTraversalNonRecursive();
 
     }
 }
