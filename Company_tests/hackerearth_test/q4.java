@@ -16,8 +16,8 @@ class Solution{
         }
         int totalHours = sc.nextInt();
         long startTime = System.nanoTime();
-        int result = maxBooks(noOfBooks,chapters,hours,totalHours);
-        // int result = maxBooksDP(noOfBooks,chapters,hours,totalHours);
+        // int result = maxBooks(noOfBooks,chapters,hours,totalHours);
+        int result = maxBooksDP(noOfBooks,chapters,hours,totalHours);
 
         System.out.println(result);
 
