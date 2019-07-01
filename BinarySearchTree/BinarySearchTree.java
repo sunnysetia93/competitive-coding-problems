@@ -67,6 +67,45 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return node;
     }
 
+    public boolean addIterative(T elem){
+        if(contains(root,elem))
+            return false;
+        else{
+            root = addIterative(root, elem);
+            nodeCount++;
+            return true;
+        }
+    }
+
+    private Node<T> addIterative(Node<T> head , T elem){
+        Node<T> tempHead = head;
+        Node<T> newNode = new Node<T>(elem);
+        if(head==null){
+            return newNode;
+        }
+
+        Node<T> parent = null;
+
+        while(head!=null){
+            parent = head;
+            if(elem.compareTo(head.data)>0){
+                head=head.right;
+            }
+            else{
+                head=head.left;
+            }
+        }
+
+        if(elem.compareTo(parent.data)>0){
+            parent.right = newNode;
+        }
+        else{
+            parent.left=newNode;
+        }
+
+        return tempHead;
+    }
+
     public Node<T> search(T elem){
         Node<T> node = root;
         
@@ -422,6 +461,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         bst.add(17);
         bst.add(20);
         bst.add(12);
+        bst.addIterative(25);   // adds iteratively
         System.out.println("In-Order Traversal: ");
         bst.inOrderTraversal();
         System.out.println("Pre-Order Traversal: ");
