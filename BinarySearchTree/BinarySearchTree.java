@@ -18,6 +18,15 @@ class Node<T extends Comparable<T>>{
         this.left=left;
         this.right=right;
     }
+
+    public Integer sumNodes(T a,T b){
+        int sum = 0;
+        if (a instanceof Number && b instanceof Number) {
+            //Change this accordingly too (Can be doubleValue(), floatValue(), longValue(), etc.)
+            sum = ((Integer) a).intValue() + ((Integer) b).intValue();
+        }
+        return sum;
+    }
 }
 
 public class BinarySearchTree<T extends Comparable<T>> {
