@@ -105,6 +105,17 @@ class MinHeap {
 
     }
 
+    public void insertMaxHeap(int element){
+        insert(-element);
+    }
+
+    public void printMaxHeap(){
+        for(int i=0;i<size;i++){
+            System.out.print((-heap[i]) + " ");
+        }
+        System.out.println(); 
+    }
+
     public static void main(String[] args) {
         MinHeap minHeap = new MinHeap(10);
         minHeap.insert(5); 
@@ -125,6 +136,19 @@ class MinHeap {
 
         int[] arr = new int[]{6,1,2,9,10,5,1};
         MinHeap.arrayToHeap(arr, 7);
+
+        System.out.println("max heap -----");
+        MinHeap maxHeap = new MinHeap(10);
+        maxHeap.insertMaxHeap(5); 
+        maxHeap.insertMaxHeap(3); 
+        maxHeap.insertMaxHeap(17); 
+        maxHeap.insertMaxHeap(10); 
+        maxHeap.insertMaxHeap(84); 
+        maxHeap.insertMaxHeap(19); 
+        maxHeap.insertMaxHeap(6); 
+        maxHeap.insertMaxHeap(22);
+
+        maxHeap.printMaxHeap();
     }
 
 }
