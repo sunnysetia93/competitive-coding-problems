@@ -61,13 +61,14 @@ class MinHeap {
 
     public void minHeapify(){
         for(int i=(size/2-1);i>=0;i--){
+            System.out.println(heap[i]);
             heapify(i);
         }
     }
 
     public void heapify(int pos){
         if(!isLeaf(pos)){
-            if(heap[pos] > heap[left(pos)] || heap[pos] > heap[right(pos)]){
+            if(( left(pos)<size && heap[pos] > heap[left(pos)]) || ( right(pos)<size && heap[pos] > heap[right(pos)])){
                 if(heap[left(pos)] < heap[right(pos)]){
                     swap(pos,left(pos));
                     heapify(left(pos));
@@ -80,6 +81,15 @@ class MinHeap {
         }
     }
 
+    public static MinHeap arrayToHeap(int[] arr, int n){
+        MinHeap Heap = new MinHeap(n);
+        Heap.heap=arr;
+        Heap.size = n;
+        Heap.minHeapify();
+        Heap.print();
+        return Heap;
+    }
+
     public void print(){
         for(int i=0;i<size/2;i++){
             System.out.print(" PARENT : " + heap[i] 
@@ -88,7 +98,7 @@ class MinHeap {
             System.out.println(); 
         }
 
-        for(int i=0;i<=size;i++){
+        for(int i=0;i<size;i++){
             System.out.print(heap[i] + " ");
         }
         System.out.println(); 
@@ -112,6 +122,9 @@ class MinHeap {
 
         minHeap.remove();
         minHeap.print();
+
+        int[] arr = new int[]{6,1,2,9,10,5,1};
+        MinHeap.arrayToHeap(arr, 7);
     }
 
 }
