@@ -28,7 +28,6 @@ class Node<T extends Comparable<T>>{
         return sum;
     }
 }
-
 public class BinarySearchTree<T extends Comparable<T>> {
     private int nodeCount =0;
     private Node<T> root = null;

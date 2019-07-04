@@ -61,7 +61,7 @@ class MinHeap {
 
     public void minHeapify(){
         for(int i=(size/2-1);i>=0;i--){
-            System.out.println(heap[i]);
+            // System.out.println(heap[i]);
             heapify(i);
         }
     }
@@ -110,7 +110,7 @@ class MinHeap {
     }
 
     public void printMaxHeap(){
-        for(int i=0;i<size;i++){
+        for(int i=0;i<=size;i++){
             System.out.print((-heap[i]) + " ");
         }
         System.out.println(); 
@@ -139,16 +139,16 @@ class MinHeap {
 
         System.out.println("max heap -----");
         MinHeap maxHeap = new MinHeap(10);
-        maxHeap.insertMaxHeap(5); 
-        maxHeap.insertMaxHeap(3); 
-        maxHeap.insertMaxHeap(17); 
-        maxHeap.insertMaxHeap(10); 
-        maxHeap.insertMaxHeap(84); 
-        maxHeap.insertMaxHeap(19); 
-        maxHeap.insertMaxHeap(6); 
-        maxHeap.insertMaxHeap(22);
 
+        maxHeap.insertMaxHeap(5);
+        maxHeap.insertMaxHeap(15);
+        maxHeap.insertMaxHeap(10);
+        maxHeap.insertMaxHeap(2);
         maxHeap.printMaxHeap();
+
+        maxHeap.remove();
+        maxHeap.printMaxHeap();
+
     }
 
 }
