@@ -20,7 +20,7 @@ class Solution
     }
 
     private static void printLevelOrder(int[] arr, int n) {
-        if(arr.length == 0)
+        if(n == 0)
             return;
 
         LinkedList<Integer> queue = new LinkedList<Integer>();
