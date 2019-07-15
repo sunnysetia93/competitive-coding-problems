@@ -1,4 +1,4 @@
-// single array tp implement three stacks
+// single array to implement three stacks
 
 import java.util.*;
 import java.lang.*;
