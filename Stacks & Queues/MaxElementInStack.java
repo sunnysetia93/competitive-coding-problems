@@ -16,9 +16,7 @@ class MaxStack {
             return;
         }
         int topElement = maxStack.peek();
-        if(topElement>value)
-            maxStack.push(topElement);
-        else
+        if(topElement<=value)
             maxStack.push(value);
         
         mainStack.push(value);
@@ -26,9 +24,13 @@ class MaxStack {
 
     public int pop(){
         if(mainStack.isEmpty())
-            return -1;
-        maxStack.pop();
-        return mainStack.pop();
+            return Integer.MIN_VALUE;
+        int popped = mainStack.pop();
+        if(popped == maxStack.peek()){
+            maxStack.pop();
+        }
+        
+        return popped;
     }
 
     public int max(){
@@ -51,6 +53,7 @@ class MaxStack {
 
         mStack.pop();
         System.out.println(mStack.max());
+
 
 
     }
