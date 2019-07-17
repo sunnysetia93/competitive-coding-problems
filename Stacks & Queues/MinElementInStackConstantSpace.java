@@ -1,5 +1,9 @@
 // https://www.geeksforgeeks.org/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/
 
+// similary for max element => condition in push and pop will get reversed 
+// i.e., for value<=currentMax => stack.push(value) else stack.push(2*value-currentMax); currentMax=value;
+// same situation for pop();
+
 import java.util.*;
 
 class StackMin {
