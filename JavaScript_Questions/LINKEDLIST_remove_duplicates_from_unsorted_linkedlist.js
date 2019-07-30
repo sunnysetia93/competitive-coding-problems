@@ -1,4 +1,4 @@
-const LinkedList = require("../JavaScript_DataStructures/LinkedList").LinkedList;
+const {LinkedList} = require("../JavaScript_DataStructures/LinkedList")();
 
 function removeDuplicates(list){
     if(list==null || list.head==null){

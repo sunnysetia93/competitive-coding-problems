@@ -89,7 +89,9 @@ function main(){
 
 // main();
 
-module.exports = {
-    LinkedListNode,
-    LinkedList
+module.exports = () =>{
+    return {
+        LinkedListNode,
+        LinkedList 
+    }
 }
