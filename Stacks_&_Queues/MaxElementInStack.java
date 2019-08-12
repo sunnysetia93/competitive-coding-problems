@@ -16,8 +16,10 @@ class MaxStack {
             return;
         }
         int topElement = maxStack.peek();
-        if(topElement<=value)
+        if(topElement<=value){
             maxStack.push(value);
+            return;
+        }
         
         mainStack.push(value);
     }
