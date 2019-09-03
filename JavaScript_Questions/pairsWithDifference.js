@@ -17,16 +17,21 @@ function findPairsDP(arr,diff){
     let dp = [];
     dp[0]=[];
     for(let i=1;i<arrLen;i++){
-        dp[i]=dp[i-1];
+        dp[i]=[...dp[i-1]];
         if(sortedArr[i]-sortedArr[i-1]===diff){
-            dp[i].push([sortedArr[i],sortedArr[i-1]]);
+            if(i>=2){
+                dp[i] = [...dp[i-2],[sortedArr[i],sortedArr[i-1]]];
+            }
+            else{
+                dp[i].push([sortedArr[i],sortedArr[i-1]]);
+            }
         }
     }
     return dp[arrLen-1];
 }
 
 function main(){
-    let arr = [3, 5, 10, 15, 17, 11, 9];
+    let arr = [3, 5, 10, 15, 19, 11, 9];
     let diff = 4;
     console.log(findPairs(arr,diff));
     console.log(findPairsDP(arr,diff));
