@@ -14,13 +14,40 @@
 // If there are multiple answers, use the answer that favors removing from the source first.
 
 
-function diffBetweenTwoStrings_recursion(source, target) {
+function diffBetweenTwoStrings(source, target) {
 	/**
 	@param source: string
 	@param target: string
 	@return: string[]
   */
   let sourceLen = source.length;
-  let dp = []
+  let targetLen = target.length;
+  let dp = new Array(sourceLen+1);
+  for(let i=0;i<=sourceLen;i++){
+    dp[i]=new Array(targetLen+1);
+  }
+  for(let i=0;i<=sourceLen;i++){
+    for(let j=0;j<=targetLen;j++){
+      if(i==0)
+        dp[i][j]=target.substring(0,j).split("");
+      else if(j==0)
+        dp[i][j]=source.substring(0,i).split("");
+      else if(source.charAt(i-1) === target.charAt(j-1)){
+        let arr=dp[i-1][j-1];
+        dp[i][j]=[...arr,source.charAt(i-1)];
+      }
+      else{
+        let arr1 = dp[i][j-1];
+        let arr2 = dp[i-1][j];
+        if(arr1.length>arr2.length){
+          dp[i][j]=[...arr2,"-"+source.charAt(i-1)];
+        }
+        else{
+          dp[i][j]=[...arr1,"+"+target.charAt(j-1)];
+        }
+      }
+    }
+  }
+  return dp[sourceLen][targetLen];
 }
 console.log(diffBetweenTwoStrings("ABCDEFG","ABDFFGH"));
