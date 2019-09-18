@@ -12,24 +12,24 @@ class CountingSort{
 
         int[] sorted = countingSort(arr, n);
 
-        for(int i=0;i<n;i++){
-            System.out.print(sorted[i]+" ");
+        for(int i : sorted){
+            System.out.print(i+" ");
         }
     }
 
     private static int[] countingSort(int[] arr,int n){
         int[] result = new int[n];
         int max = Integer.MIN_VALUE;
-        for(int i=0;i<n;i++){
-            max=Math.max(max, arr[i]);
+        for(int i : arr){
+            max=Math.max(max, i);
         }
 
         int[] freq = new int[max+1];
-        for(int i=0;i<n;i++){
-            freq[arr[i]]++;
+        for(int i : arr){
+            freq[i]++;
         }
-        int k=0;
-        for(int i=0;i<=max;i++){
+        
+        for(int i=0,k=0;i<=max;i++){
             for(int j=1;j<=freq[i];j++){
                 result[k++]=i;
             }
