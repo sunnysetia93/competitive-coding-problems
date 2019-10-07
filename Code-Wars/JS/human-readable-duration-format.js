@@ -35,10 +35,7 @@ function formatDuration (seconds) {
         finalResult += result[i]+", "
       }
     }
-    
-    
     return finalResult;
-    
   }
   
   function pluralize(num,str){
