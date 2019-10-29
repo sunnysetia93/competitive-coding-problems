@@ -13,6 +13,7 @@
 <li><a href="http://www.hackerearth.com/">Hacker Earth</a></li>
 <li><a href="http://www.leetcode.com/">Leet Code</a></li>
 <li><a href="http://www.codechef.com/">Code Chef</a></li>
+<li><a href="http://www.codewars.com/">Code Wars</a></li>
 </ul>
 
 #### :point_right: Also, Includes solutions to problems solved using JAVASCRIPT:
