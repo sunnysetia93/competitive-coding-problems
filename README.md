@@ -24,4 +24,4 @@
 </ul>
 
 ### :star: This repository is open to contributions. 
-#### To contribute, raise a pull request and help improve the existing solutions.
+#### To contribute, raise a pull request and help improve the existing solutions :)
