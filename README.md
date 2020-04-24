@@ -1,12 +1,12 @@
 # competitive-coding-problems
 
-<i>Solutions to problems, hackathons, coding competitions.</i>
+<i>Solutions to Problems, Coding hackathons, Coding Competitions.</i>
 
 ### Languages : Javascript, Java & C
 
-#### :star: Newest Addition: Specific JavaScript related Problems
+#### :star: Newest Addition: JavaScript related Problems
 
-#### :point_right: Problems are from the following sites: 
+#### :point_right: Problems are from the following Reputed Coding Platforms: 
 <ul>
 <li><a href="http://geeksforgeeks.org">Geeks for Geeks</a></li>
 <li><a href="http://www.codewars.com/">Code Wars</a></li>
