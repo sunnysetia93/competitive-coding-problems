@@ -2,9 +2,9 @@
 
 <i>Solutions to Problems, Coding hackathons, Coding Competitions.</i>
 
-### Languages : Javascript, Java & C
+### :code: Languages : Javascript, Java & C
 
-#### :star: Newest Addition: JavaScript related Problems
+#### :octocat:: Newest Addition: JavaScript related Problems
 
 #### :point_right: Problems are from the following Reputed Coding Platforms: 
 <ul>
