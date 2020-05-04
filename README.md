@@ -16,7 +16,7 @@
 <li><a href="http://www.codechef.com/">Code Chef</a></li>
 </ul>
 
-#### :point_right: Also, Includes solutions to problems solved using JAVASCRIPT:
+#### :point_right: Also, Includes solution to problems solved using JAVASCRIPT:
 <ul>
   <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_DataStructures">Data Structures in JavaScript</a></li>
   <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_Questions">Problems solved using JavaScript</a></li> 
