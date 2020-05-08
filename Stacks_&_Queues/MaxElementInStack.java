@@ -16,11 +16,11 @@ class MaxStack {
             return;
         }
         int topElement = maxStack.peek();
-        if(topElement<=value){
+        if(topElement<=value)
             maxStack.push(value);
-            return;
-        }
-        
+        else
+            maxStack.push(topElement);
+
         mainStack.push(value);
     }
 
@@ -28,14 +28,14 @@ class MaxStack {
         if(mainStack.isEmpty())
             return Integer.MIN_VALUE;
         int popped = mainStack.pop();
-        if(popped == maxStack.peek()){
-            maxStack.pop();
-        }
-        
+        maxStack.pop();
+
         return popped;
     }
 
     public int max(){
+        if(mainStack.isEmpty())
+            return Integer.MIN_VALUE;
         return maxStack.peek();
     }
 
@@ -44,19 +44,23 @@ class MaxStack {
         MaxStack mStack = new MaxStack();
 
         mStack.push(10);
-        System.out.println(mStack.max());
+        System.out.println(mStack.max()); //10
         mStack.push(3);
-        System.out.println(mStack.max());
+        System.out.println(mStack.max()); //10
         mStack.push(15);
-        System.out.println(mStack.max());
+        System.out.println(mStack.max()); //15
 
         mStack.pop();
-        System.out.println(mStack.max());
+        System.out.println(mStack.max()); //10
 
         mStack.pop();
-        System.out.println(mStack.max());
+        System.out.println(mStack.max()); //10
 
+        mStack.pop();
+        System.out.println(mStack.max()); //-2147483648 => empty
 
+        mStack.pop();
+        System.out.println(mStack.max()); //-2147483648 => empty
 
     }
 }
