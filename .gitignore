@@ -8,3 +8,4 @@
 *.class
 .vscode
 *.log
+.DS_Store
