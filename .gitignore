@@ -8,5 +8,4 @@
 *.class
 .vscode
 *.log
-.DS_Storet
-gi
+.DS_Store
