@@ -4,13 +4,14 @@ First of all, I would like Thank you for showing interest as I greatly appreciat
 
 ## How to setup?
 
-This is the most simple project when it comes to contributions, setup, opening issues/pull requests + you get to practive competitive questions.
+This is the most simple project when it comes to contributions, setup, opening issues/pull requests + you get to practice competitive questions.
+
 So let's get started.
 
 - Clone the repo using the command 
 `git clone https://github.com/sunnysetia93/competitive-coding-problems.git`
 
-##### NOTE: Programming Language is not a constraint. Psuedo Code in form of comments is also appreciated as, It can be solved by one of us later.
+##### NOTE: Programming Language is not a constraint. Pseudo code (in form of comments) is also appreciated as It can be solved by one of us later.
 
 ## How to pick up an Issue
 - Comment on the issue first so that we can assign you the issue. 
@@ -37,3 +38,5 @@ So let's get started.
 - Todo
   - Unit Test cases for Questions already solved.
   - Optimizing the logic.
+  - Issue Template
+  - PR Template
