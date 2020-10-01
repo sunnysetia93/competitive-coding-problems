@@ -24,4 +24,9 @@
 </ul>
 
 ### :star: This repository is open to contributions. 
-#### To contribute, raise a pull request and help improve the existing solutions :)
+#### To contribute
+ - Refer CONTRIBUTING.md first
+ - Raise a pull request
+ - Help improve the existing solutions or create new ones :)
+ 
+ ##### NOTE: Programming Language is not a constraint. Psuedo Code in form of comments is also appreciated as, It can be solved by one of us later.
