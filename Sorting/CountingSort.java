@@ -38,3 +38,5 @@ class CountingSort{
         return result;
     }
 }
+
+// Complexity of the algorithm is O(n+m) where n is number of items in array and m is number of unique elements
