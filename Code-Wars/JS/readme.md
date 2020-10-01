@@ -3,5 +3,5 @@
 ### Test
 
 ```
-npx jest --watch
+npm t
 ```
