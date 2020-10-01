@@ -11,15 +11,5 @@
   "scripts": {
     "test": "jest --watchAll"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/paulrrdiaz/competitive-coding-problems.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/paulrrdiaz/competitive-coding-problems/issues"
-  },
-  "homepage": "https://github.com/paulrrdiaz/competitive-coding-problems#readme"
+  "keywords": []
 }
