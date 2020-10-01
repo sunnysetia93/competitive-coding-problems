@@ -39,4 +39,4 @@ class CountingSort{
     }
 }
 
-// Complexity is O(n^2)
+// Complexity of the algorithm is O(n+m) where n is number of items in array and m is number of unique elements

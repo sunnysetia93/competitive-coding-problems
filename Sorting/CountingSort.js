@@ -20,4 +20,4 @@ let arr = [1, 1, 0, 3, 2, 5, 9, 3];
 let sorted = countingSort(arr);
 console.log(sorted);
 
-// Complexity of the algorithm is O(n^2)
+// Complexity of the algorithm is O(n+m) where n is number of items in array and m is number of unique elements
