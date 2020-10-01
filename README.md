@@ -2,7 +2,7 @@
 
 <i>Solutions to Problems, Coding hackathons, Coding Competitions.</i>
 
-### :octocat: Languages : Javascript, Java & C
+### :octocat: Languages : Javascript, Java & C (Other Languages are welcome as well)
 
 #### :star: Newest Addition: LeetCode Covid-19 Challenge - <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Leetcode_April_Challenge_Covid19">April</a>, <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Leetcode_May_Challenge_Covid19">May</a> & <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Leetcode_June_Challenge_Covid19">June</a> Solutions
 
@@ -25,8 +25,8 @@
 
 ### :star: This repository is open to contributions. 
 #### To contribute
- - Refer CONTRIBUTING.md first
+ - Refer [CONTRIBUTING.md](https://github.com/sunnysetia93/competitive-coding-problems/blob/master/CONTRIBUTING.md) first
  - Raise a pull request
  - Help improve the existing solutions or create new ones :)
  
- ##### NOTE: Programming Language is not a constraint. Psuedo Code in form of comments is also appreciated as, It can be solved by one of us later.
+ #### NOTE: Programming Language is not a constraint. Psuedo Code in form of comments is also appreciated as, It can be solved by one of us later.
