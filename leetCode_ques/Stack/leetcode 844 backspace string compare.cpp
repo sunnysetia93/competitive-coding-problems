@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 /*------SOLUTION-------*/
 class Solution {
 public:
@@ -47,3 +50,11 @@ Input: S = "a#c", T = "b"
 Output: false
 Explanation: S becomes "c" while T becomes "b".
 */
+
+/*---DRIVER CODE---*/
+int main(){
+	Solution sol;
+	string input1="ab#c";
+	string input2="ad#c";
+	cout<<sol.backspaceCompare(input1,input2)<<endl;
+}

@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 /*---------SOLUTION----------*/
 class Solution {
 public:
@@ -66,3 +69,10 @@ Example 5:
 Input: s = "{[]}"
 Output: true
 */
+
+/*------DRIVER CODE-----*/
+int main(){
+	Solution sol;
+	string str="()[]{}";
+	cout<<sol.isValid(str)<<endl;
+}

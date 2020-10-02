@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 /*---------SOLUTION---------*/
 class Solution {
 public:
@@ -68,3 +71,10 @@ Explanation:
 = 17 + 5
 = 22
 */
+
+/*----DRIVER CODE---*/
+int main(){
+	Solution sol;
+	vector<string> input={"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
+	cout<<sol.evalRPN(input)<<endl;
+}
