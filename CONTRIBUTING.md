@@ -32,6 +32,40 @@ So let's get started.
   - It's great if you can add the Unit Tests to verify your solutions as well.
 - When adding a Unit Test
      - Take care of the file name convention
+
+### Folder Structure for LeetCode
+```
+LeetCode
+├── All
+│   ├── languageName
+│   │   ├── ####.name-of-the-problem.languageExtension
+├── Challenges
+│   ├── Month_LeetCoding_Challenge
+│   │   └── languageName
+│   │       ├── ####.name-of-the-problem.languageExtension
+├── Contests
+│   ├── Biweekly Contest ##
+│   │   └── languageName
+│   │       ├── ####.name-of-the-problem.languageExtension
+│   ├── Weekly Contest ##
+│   │   └── languageName
+│   │       ├── ####.name-of-the-problem.languageExtension
+├── Difficulty
+│   ├── Easy
+│   │   └── languageName
+│   │       ├── ####.name-of-the-problem.languageExtension
+│   ├── Hard
+│   │   └── languageName
+│   │       ├── ####.name-of-the-problem.languageExtension
+│   └── Medium
+│   │   └── languageName
+│   │       ├── ####.name-of-the-problem.languageExtension
+├── Tag
+│   ├── Tag Name
+│   │   └── languageName
+│   │       ├── ####.name-of-the-problem.languageExtension
+```
+
 ### Notes
 
 - Keep an eye on this guide, it's subjected to change frequently.
