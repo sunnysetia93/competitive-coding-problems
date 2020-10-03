@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 /*---------THE PROBLEM--------*/
 
 // Leetcode 136 - Single Number
@@ -30,3 +33,10 @@ public:
 
 /*----------COMPLEXITY------------*/
 // O(n) Time complexity, No extra space used
+
+/*---Driver Code---*/
+int main(){
+	Solution sol;
+	vector<int> input={2,2,1};
+	cout<<sol.singleNumber(input)<<endl;
+}
