@@ -5,7 +5,7 @@
 //      1 => 2 => 4 => 5 => null 
 // 3 got deleted
 
-const {LinkedList} = require("../JavaScript_DataStructures/LinkedList")();
+const {LinkedList} = require("../JavaScriptDataStructureImplementation/LinkedList")();
 
 function deleteMiddleNode(list){
     if(list==null || list.head==null){
