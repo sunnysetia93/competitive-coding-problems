@@ -18,7 +18,7 @@
 
 #### :point_right: Also, Includes solution to problems solved using JAVASCRIPT:
 <ul>
-  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_DataStructures">Data Structures in JavaScript</a></li>
+  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptDataStructureImplementation">Data Structures in JavaScript</a></li>
   <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptQuestions">Problems solved using JavaScript</a></li> 
 <li> <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptQuestions/EloquentJSBookExercises">Eloquent Javascript Book Exercises</a></li>
 </ul>
