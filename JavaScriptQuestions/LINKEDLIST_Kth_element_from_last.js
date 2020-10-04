@@ -1,4 +1,4 @@
-const {LinkedList} = require('../JavaScript_DataStructures/LinkedList')();
+const {LinkedList} = require('../JavaScriptDataStructureImplementation/LinkedList')();
 
 function KthFromLast_Recursive(head,k){
     if(head==null)
