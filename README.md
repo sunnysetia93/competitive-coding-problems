@@ -4,7 +4,7 @@
 
 ### :octocat: Languages : Javascript, Java & C (Other Languages are welcome as well)
 
-#### :star: Newest Addition: LeetCode Covid-19 Challenge - <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Leetcode_April_Challenge_Covid19">April</a>, <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Leetcode_May_Challenge_Covid19">May</a> & <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Leetcode_June_Challenge_Covid19">June</a> Solutions
+#### :star: Newest Addition: LeetCode Covid-19 Challenge - <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/LeetCode/Challenges/Covid19_April_Coding_Challenge/">April</a>, <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/LeetCode/Challenges/Covid19_May_Coding_Challenge/">May</a>, <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/LeetCode/Challenges/Covid19_June_Coding_Challenge/">June</a> &  <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/LeetCode/Challenges/Covid19_October_Coding_Challenge/">October</a> Solutions
 
 #### :point_right: Problems are from the following Reputed Coding Platforms: 
 <ul>
@@ -18,9 +18,9 @@
 
 #### :point_right: Also, Includes solution to problems solved using JAVASCRIPT:
 <ul>
-  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_DataStructures">Data Structures in JavaScript</a></li>
-  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_Questions">Problems solved using JavaScript</a></li> 
-<li> <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Javascript_Eloquent_JS_Book_Exercises">Eloquent Javascript Book Exercises</a></li>
+  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptDataStructureImplementation">Data Structures in JavaScript</a></li>
+  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptQuestions">Problems solved using JavaScript</a></li> 
+<li> <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptQuestions/EloquentJSBookExercises">Eloquent Javascript Book Exercises</a></li>
 </ul>
 
 ### :star: This repository is open to contributions. 

@@ -33,7 +33,7 @@ So let's get started.
 - When adding a Unit Test
      - Take care of the file name convention
 
-### Folder Structure for LeetCode
+### Folder Structure (Example Folder - LeetCode)
 ```
 LeetCode
 ├── All
