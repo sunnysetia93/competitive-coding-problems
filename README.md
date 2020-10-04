@@ -19,8 +19,8 @@
 #### :point_right: Also, Includes solution to problems solved using JAVASCRIPT:
 <ul>
   <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_DataStructures">Data Structures in JavaScript</a></li>
-  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScript_Questions">Problems solved using JavaScript</a></li> 
-<li> <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/Javascript_Eloquent_JS_Book_Exercises">Eloquent Javascript Book Exercises</a></li>
+  <li><a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptQuestions">Problems solved using JavaScript</a></li> 
+<li> <a href="https://github.com/sunnysetia93/competitive-coding-problems/tree/master/JavaScriptQuestions/EloquentJSBookExercises">Eloquent Javascript Book Exercises</a></li>
 </ul>
 
 ### :star: This repository is open to contributions. 
