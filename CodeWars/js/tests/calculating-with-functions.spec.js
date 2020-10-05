@@ -8,7 +8,7 @@ import {
   plus,
   times,
   dividedBy,
-} from "./calculating-with-functions";
+} from "../calculating-with-functions";
 
 describe("Calculating with Functions", () => {
   it("should pass", () => {
