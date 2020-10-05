@@ -1,4 +1,4 @@
-import { removeZeros } from "./remove-zeros";
+import { removeZeros } from "../remove-zeros";
 
 describe("Remove Zeros", () => {
   it("should pass", () => {
