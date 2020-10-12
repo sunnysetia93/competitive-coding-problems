@@ -6,7 +6,7 @@
 // Approach : (Total no. of ways to select 2 astronauts from available astronauts and subtracting the no. of ways you can choose astronauts from the same city).
 // You need to figure out no.(N) of astronauts that belong to the same city and then subtracting NC2 from total no. of ways to select two astronaut.
 // To find no. of astonauts that belong to the same city - I have used DFS connected components approach.
-
+// Time Complexity : O(NLogM)
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
