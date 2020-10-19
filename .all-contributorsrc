@@ -5,7 +5,7 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
-    {
+      {
       "login": "sunnysetia93",
       "name": "Sunny Setia",
       "avatar_url": "https://avatars3.githubusercontent.com/u/6140084?v=4",
@@ -15,6 +15,15 @@
         "maintenance",
         "doc",
         "infra"
+      ]
+    },
+    {
+      "login": "bhavidhingra",
+      "name": "Bhavi Dhingra",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/17147510?v=4",
+      "profile": "http://www.bhavidhingra.dev ",
+      "contributions": [
+        "code"
       ]
     }
   ],
