@@ -38,32 +38,32 @@ So let's get started.
 LeetCode
 ├── All
 │   ├── languageName
-│   │   ├── ####.name-of-the-problem.languageExtension
+│   │   ├── problemNo.name-of-the-problem.languageExtension
 ├── Challenges
 │   ├── Month_LeetCoding_Challenge
 │   │   └── languageName
-│   │       ├── ####.name-of-the-problem.languageExtension
+│   │       ├── problemNo.name-of-the-problem.languageExtension
 ├── Contests
 │   ├── Biweekly Contest ##
 │   │   └── languageName
-│   │       ├── ####.name-of-the-problem.languageExtension
+│   │       ├── problemNo.name-of-the-problem.languageExtension
 │   ├── Weekly Contest ##
 │   │   └── languageName
-│   │       ├── ####.name-of-the-problem.languageExtension
+│   │       ├── problemNo.name-of-the-problem.languageExtension
 ├── Difficulty
 │   ├── Easy
 │   │   └── languageName
-│   │       ├── ####.name-of-the-problem.languageExtension
+│   │       ├── problemNo.name-of-the-problem.languageExtension
 │   ├── Hard
 │   │   └── languageName
-│   │       ├── ####.name-of-the-problem.languageExtension
+│   │       ├── problemNo.name-of-the-problem.languageExtension
 │   └── Medium
 │   │   └── languageName
-│   │       ├── ####.name-of-the-problem.languageExtension
+│   │       ├── problemNo.name-of-the-problem.languageExtension
 ├── Tag
 │   ├── Tag Name
 │   │   └── languageName
-│   │       ├── ####.name-of-the-problem.languageExtension
+│   │       ├── problemNo.name-of-the-problem.languageExtension
 ```
 
 ### Notes
