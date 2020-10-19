@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "sunnysetia93",
+      "name": "Sunny Setia",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6140084?v=4",
+      "profile": "https://sunnysetia.in/",
+      "contributions": [
+        "code",
+        "maintenance",
+        "doc",
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "competitive-coding-problems",
+  "projectOwner": "sunnysetia93",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
