@@ -43,6 +43,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://sunnysetia.in/"><img src="https://avatars3.githubusercontent.com/u/6140084?v=4" width="100px;" alt=""/><br /><sub><b>Sunny Setia</b></sub></a><br /><a href="https://github.com/sunnysetia93/competitive-coding-problems/commits?author=sunnysetia93" title="Code">💻</a> <a href="#maintenance-sunnysetia93" title="Maintenance">🚧</a> <a href="https://github.com/sunnysetia93/competitive-coding-problems/commits?author=sunnysetia93" title="Documentation">📖</a> <a href="#infra-sunnysetia93" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="http://www.bhavidhingra.dev "><img src="https://avatars1.githubusercontent.com/u/17147510?v=4" width="100px;" alt=""/><br /><sub><b>Bhavi Dhingra</b></sub></a><br /><a href="https://github.com/sunnysetia93/competitive-coding-problems/commits?author=bhavidhingra" title="Code">💻</a></td>
   </tr>
 </table>
