@@ -1,4 +1,7 @@
 # competitive-coding-problems
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <i>Solutions to Problems, Coding hackathons, Coding Competitions.</i>
 
@@ -30,3 +33,22 @@
  - Help improve the existing solutions or create new ones :)
  
  #### NOTE: Programming Language is not a constraint. Psuedo Code in form of comments is also appreciated as, It can be solved by one of us later.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://www.bhavidhingra.dev "><img src="https://avatars1.githubusercontent.com/u/17147510?v=4" width="100px;" alt=""/><br /><sub><b>Bhavi Dhingra</b></sub></a><br /><a href="https://github.com/sunnysetia93/competitive-coding-problems/commits?author=bhavidhingra" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
