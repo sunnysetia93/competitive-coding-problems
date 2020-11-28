@@ -34,6 +34,10 @@ So let's get started.
      - Take care of the file name convention
 
 ### Folder Structure (Example Folder - LeetCode)
+#### File name to be followed: 
+ eg: <i>445.add-two-numbers-II.js </i>
+  1. here <b>445</b> is the official problem number from leetcode
+  2. name should be in Kebab Case. (dash/hyphen(-) in between words)
 ```
 LeetCode
 ├── All
