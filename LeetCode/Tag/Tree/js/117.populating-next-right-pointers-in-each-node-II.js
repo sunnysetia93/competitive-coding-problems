@@ -54,3 +54,23 @@ function runBFS(root) {
 
     return stack;
 }
+
+/* alternate approach
+*
+*
+*
+     var connect = function(root) {
+      if (!root) return root;
+      const queue = [root];
+      while (queue.length) {
+        const level = queue.length;
+        for (let i = 0; i < level; i++) {
+          const current = queue.shift();
+          if (i < level - 1) current.next = queue[0];
+          if (current.left) queue.push(current.left);
+          if (current.right) queue.push(current.right);
+        }
+      }
+      return root;
+    };
+* */
