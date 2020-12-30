@@ -1,3 +1,6 @@
+/**
+ * Explanation: https://leetcode.com/problems/game-of-life/discuss/73223/Easiest-JAVA-solution-with-explanation
+ */
 class Solution {
 public:
     void gameOfLife(vector<vector<int>>& board) {
