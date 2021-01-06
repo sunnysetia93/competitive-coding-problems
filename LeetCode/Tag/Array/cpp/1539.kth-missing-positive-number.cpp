@@ -1,3 +1,6 @@
+/**
+ * TC: O(n)
+ */
 class Solution {
 public:
     int findKthPositive(vector<int>& arr, int k) {
@@ -10,3 +13,8 @@ public:
         return arr.back() + k;
     }
 };
+
+/**
+ * For O(logN) solution, please refer:
+ * https://leetcode.com/problems/kth-missing-positive-number/discuss/779999/JavaC%2B%2BPython-O(logN)
+ */
