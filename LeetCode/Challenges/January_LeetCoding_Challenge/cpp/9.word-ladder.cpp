@@ -1,36 +1,44 @@
 class Solution {
+    unordered_set<string> wordSet;
+    unordered_set<string> nextWords;
+    unordered_set<string> prevWords;
+    
 public:
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-        unordered_set<string> wordDict;
-        for (string& word: wordList) wordDict.insert(word);
-        if (wordDict.find(endWord) == wordDict.end()) return 0;
-        wordDict.erase(beginWord);
-        wordDict.erase(endWord);
-        unordered_set<string> nextWords ({beginWord}), prevWords ({endWord});
+        for (string& word: wordList) wordSet.insert(word);
+        if (wordSet.find(endWord) == wordSet.end()) return 0;
+        
+        wordSet.erase(beginWord);
+        prevWords.insert(beginWord);
+        
+        wordSet.erase(endWord);
+        nextWords.insert(endWord);
+        
         int ladder = 2;
-        while (!nextWords.empty() && !prevWords.empty()) {
-            if (nextWords.size() > prevWords.size())
-                swap(nextWords, prevWords);
+        while (!prevWords.empty() && !nextWords.empty()) {
+            if (prevWords.size() > nextWords.size())
+                swap(prevWords, nextWords);
+
             unordered_set<string> temp;
-            for (auto itr = nextWords.begin(); itr != nextWords.end(); itr++) {
+            for (auto itr = prevWords.begin(); itr != prevWords.end(); ++itr) {
                 string word = *itr;
-                for (int p = 0; p < word.length(); p++) {
-                    char letter = word[p];
+                for (int i = 0; i < word.length(); ++i) {
+                    char letter = word[i];
                     for (char ch = 'a'; ch <= 'z'; ++ch) {
                         if (ch == letter) continue;
-                        word[p] = ch;
-                        if (prevWords.find(word) != prevWords.end())
+                        word[i] = ch;
+                        if (nextWords.find(word) != nextWords.end())
                             return ladder;
-                        if (wordDict.find(word) != wordDict.end()) {
+                        if (wordSet.find(word) != wordSet.end()) {
                             temp.insert(word);
-                            wordDict.erase(word);
+                            wordSet.erase(word);
                         }
                     }
-                    word[p] = letter;
+                    word[i] = letter;
                 }
             }
-            swap(nextWords, temp);
-            ladder++; 
+            swap(prevWords, temp);
+            ++ladder;
         }
         return 0;
     }
