@@ -1,3 +1,6 @@
+/**
+ * This problem is equivalent to finding the longest subarray whose sum is == totalSum - x
+ */
 class Solution {
 public:
     int minOperations(vector<int>& nums, int x) {
