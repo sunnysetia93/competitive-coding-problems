@@ -3,7 +3,6 @@ class Solution {
         HashMap<Integer, Integer> freq = new HashMap<>();
         int count = 0;
         for (int x : nums) {
-            int minFreq = 0;
             if (freq.getOrDefault(k-x, 0) > 0) {
                 ++count;
                 freq.put(k-x, freq.get(k-x) - 1);
