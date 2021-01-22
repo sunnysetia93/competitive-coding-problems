@@ -12,7 +12,7 @@ class Solution {
             if (ki != k-1)                      // stack is not full
                 K[++ki] = ni;                   // stack push
         }
-        
+
         for (int i = 0; i < k; ++i)
             K[i] = nums[K[i]];                  // fill the stack with element values
 
