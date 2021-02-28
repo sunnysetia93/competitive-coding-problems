@@ -1,5 +1,5 @@
 /bin/
-/.idea
+*.idea
 /.metadata/
 /.recommenders/
 /LinkedListPrograms/.classpath
@@ -10,3 +10,5 @@
 *.log
 .DS_Store
 node_modules
+*.iml
+*.zip
