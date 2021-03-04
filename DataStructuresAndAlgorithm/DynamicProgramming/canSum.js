@@ -1,7 +1,7 @@
 /*
-    input 1 : 7
-    input 2 : [3,4,5]
-    output: true
+    Input 1 : 7
+    Input 2 : [3,4,5]
+    Output: true
  */
 
 const canSum = (target, numbers, memo = {}) => {
@@ -22,5 +22,5 @@ const canSum = (target, numbers, memo = {}) => {
 
 console.log(canSum(7, [3, 4, 5])); // true
 console.log(canSum(300, [23])); // false
-console.log(canSum(20, [2,4]));
+console.log(canSum(20, [2, 4]));
 
