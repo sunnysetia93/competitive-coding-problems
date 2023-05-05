@@ -1,3 +1,7 @@
+/*
+Given a non-empty array containing only non-negative integers, return the list with trailing and leading zeroes removed.
+* */
+
 function removeZeroes(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
