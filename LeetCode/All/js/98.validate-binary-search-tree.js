@@ -39,3 +39,38 @@ var isValidBST = function(root) {
 */
 
 // https://leetcode.com/problems/validate-binary-search-tree/solutions/32112/learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-java-solution/
+
+const isValidBST = (root) => {
+    const sortedArray = inOrderTraversal(root);
+
+    for(let i=1;i<sortedArray.length;i++){
+        if(sortedArray[i-1] >= sortedArray[i]){
+            return false;
+        }
+    }
+
+    return true;
+}
+
+const inOrderTraversal = (root) => {
+        if(!root) return [];
+
+    const stack = [];
+    const list = [];
+
+    while(root!= null || stack.length!=0){
+
+        if(root){ // check if root then add to stack and move to left
+            stack.push(root);
+            root = root.left;
+        }
+        else { // no left part means pop and add left to list and move to it's right
+
+        root = stack.pop();
+        list.push(root.val);
+        root = root.right;
+        }
+    }
+
+    return list;
+}
