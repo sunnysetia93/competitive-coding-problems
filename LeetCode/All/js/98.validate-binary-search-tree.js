@@ -20,3 +20,22 @@ var isValidBST = function(root, lowerBound = -Infinity, upperBound = Infinity) {
         return false;
     }
 };
+
+/*
+var isValidBST = function(root) {
+    
+    function inOrder(node) {
+        if(!node) return [];
+        return [...inOrder(node.left), node.val, ...inOrder(node.right)]
+    }
+    
+    const sortedArr = inOrder(root);
+    
+    for(let i = 0; i < sortedArr.length; i++) {
+        if(sortedArr[i+1] <= sortedArr[i]) return false;
+    }
+    return true;
+};
+*/
+
+// https://leetcode.com/problems/validate-binary-search-tree/solutions/32112/learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-java-solution/
