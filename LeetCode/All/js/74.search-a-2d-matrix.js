@@ -31,3 +31,25 @@ function binarySearch(arr,target){
 
     return end;
 }
+
+// shorted code
+
+/**
+ * @param {number[][]} matrix
+ * @param {number} target
+ * @return {boolean}
+ */
+var searchMatrix = function(matrix, target) {
+  let rows = matrix.length
+  let cols = matrix[0].length
+  if(rows === 0) return false
+
+  let r = 0
+  let c = cols - 1
+  while(r < rows && c >= 0){
+      if(matrix[r][c] === target) return true
+      else if(matrix[r][c] < target) r++
+      else c--
+  }
+  return false
+};
