@@ -1,8 +1,7 @@
 class MaxHeap {
-    constructor(nums) {
+  constructor(nums) {
     this.heap = nums.length ? nums : [];
   }
-
 
   print(){
     console.log(this.heap);
@@ -96,7 +95,7 @@ class MaxHeap {
       index = greaterChildIndex;
     }
   }
- 
+
   buildHeap() {
     if(this.heap.length === 0)
         return [];
@@ -122,3 +121,22 @@ class MaxHeap {
   }
 
 }
+
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+var findKthLargest = function(nums, k) {
+    const heap = new MaxHeap(nums);
+    heap.buildHeap();
+    for(let i=0;i<k-1;i++){
+      heap.remove();
+    }
+
+    return heap.remove();
+};
+
+
+// another approach
+// https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/584913/intuitive-javascript-solution-with-quick-sort/

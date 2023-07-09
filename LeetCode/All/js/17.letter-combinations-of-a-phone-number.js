@@ -40,3 +40,50 @@ function backTrack(combination, digits, list){
         }
     }
 }
+
+
+
+
+
+
+
+
+/**
+ * @param {string} digits
+ * @return {string[]}
+ */
+var letterCombinations = function(digits) {  
+    let numbers = {
+        "2" : "abc",
+        "3" : "def",
+        "4" : "ghi",
+        "5" : "jkl",
+        "6" : "mno",
+        "7" : "pqrs",
+        "8" : "tuv",
+        "9" : "wxyz"
+    };
+
+    if(digits.length === 0)
+        return [];
+
+    const combinations = [];
+    const values = digits.split('').map((digit) => numbers[digit]);
+
+    const backtrack = (str='', index=0) =>{
+        if(str.length === values.length){
+            return combinations.push(str);
+        }
+
+        let currentStr = values[index]; //abc
+        for(let i=0; i<currentStr.length; i++){
+            const ch = currentStr.substring(i,i+1);
+            backtrack(str.concat(ch),index+1, i);
+        }
+    }
+
+    backtrack();
+
+    return combinations;
+
+};
