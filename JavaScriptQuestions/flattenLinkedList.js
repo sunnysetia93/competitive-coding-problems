@@ -1,3 +1,4 @@
+// https://www.geeksforgeeks.org/flattening-a-linked-list/amp/
 let head = null;
 
 class Node {
